@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C5CE826148F3E4900B71B27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5CE825148F3E4900B71B27 /* UIKit.framework */; };
+		8C5CE828148F3E4900B71B27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5CE827148F3E4900B71B27 /* Foundation.framework */; };
+		8C5CE82A148F3E4900B71B27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5CE829148F3E4900B71B27 /* CoreGraphics.framework */; };
+		8C5CE85B148F469600B71B27 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE84E148F469600B71B27 /* 1.gif */; };
+		8C5CE85C148F469600B71B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE84F148F469600B71B27 /* main.m */; };
+		8C5CE85D148F469600B71B27 /* SCGifExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE850148F469600B71B27 /* SCGifExample-Info.plist */; };
+		8C5CE85E148F469600B71B27 /* SCGifExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE856148F469600B71B27 /* SCGifExampleAppDelegate.m */; };
+		8C5CE85F148F469600B71B27 /* SCGifExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE858148F469600B71B27 /* SCGifExampleViewController.m */; };
+		8C5CE860148F469600B71B27 /* SCGIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE85A148F469600B71B27 /* SCGIFImageView.m */; };
+		8C5CE868148F470F00B71B27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE866148F470F00B71B27 /* InfoPlist.strings */; };
+		8C5CE86E148F471500B71B27 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE86A148F471500B71B27 /* MainWindow.xib */; };
+		8C5CE86F148F471500B71B27 /* SCGifExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE86C148F471500B71B27 /* SCGifExampleViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C5CE821148F3E4900B71B27 /* SCGifExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCGifExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5CE825148F3E4900B71B27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8C5CE827148F3E4900B71B27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C5CE829148F3E4900B71B27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C5CE84E148F469600B71B27 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = SOURCE_ROOT; };
+		8C5CE84F148F469600B71B27 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		8C5CE850148F469600B71B27 /* SCGifExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SCGifExample-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8C5CE851148F469600B71B27 /* SCGifExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCGifExample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		8C5CE855148F469600B71B27 /* SCGifExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGifExampleAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		8C5CE856148F469600B71B27 /* SCGifExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGifExampleAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		8C5CE857148F469600B71B27 /* SCGifExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGifExampleViewController.h; sourceTree = SOURCE_ROOT; };
+		8C5CE858148F469600B71B27 /* SCGifExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGifExampleViewController.m; sourceTree = SOURCE_ROOT; };
+		8C5CE859148F469600B71B27 /* SCGIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGIFImageView.h; sourceTree = SOURCE_ROOT; };
+		8C5CE85A148F469600B71B27 /* SCGIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGIFImageView.m; sourceTree = SOURCE_ROOT; };
+		8C5CE867148F470F00B71B27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		8C5CE86B148F471500B71B27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		8C5CE86D148F471500B71B27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCGifExampleViewController.xib; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C5CE81E148F3E4900B71B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5CE826148F3E4900B71B27 /* UIKit.framework in Frameworks */,
+				8C5CE828148F3E4900B71B27 /* Foundation.framework in Frameworks */,
+				8C5CE82A148F3E4900B71B27 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C5CE816148F3E4900B71B27 = {
+			isa = PBXGroup;
+			children = (
+				8C5CE82B148F3E4900B71B27 /* SCGifExample */,
+				8C5CE824148F3E4900B71B27 /* Frameworks */,
+				8C5CE822148F3E4900B71B27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C5CE822148F3E4900B71B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C5CE821148F3E4900B71B27 /* SCGifExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C5CE824148F3E4900B71B27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C5CE825148F3E4900B71B27 /* UIKit.framework */,
+				8C5CE827148F3E4900B71B27 /* Foundation.framework */,
+				8C5CE829148F3E4900B71B27 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C5CE82B148F3E4900B71B27 /* SCGifExample */ = {
+			isa = PBXGroup;
+			children = (
+				8C5CE84E148F469600B71B27 /* 1.gif */,
+				8C5CE855148F469600B71B27 /* SCGifExampleAppDelegate.h */,
+				8C5CE856148F469600B71B27 /* SCGifExampleAppDelegate.m */,
+				8C5CE857148F469600B71B27 /* SCGifExampleViewController.h */,
+				8C5CE858148F469600B71B27 /* SCGifExampleViewController.m */,
+				8C5CE859148F469600B71B27 /* SCGIFImageView.h */,
+				8C5CE85A148F469600B71B27 /* SCGIFImageView.m */,
+				8C5CE86A148F471500B71B27 /* MainWindow.xib */,
+				8C5CE86C148F471500B71B27 /* SCGifExampleViewController.xib */,
+				8C5CE82C148F3E4900B71B27 /* Supporting Files */,
+			);
+			path = SCGifExample;
+			sourceTree = "<group>";
+		};
+		8C5CE82C148F3E4900B71B27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C5CE866148F470F00B71B27 /* InfoPlist.strings */,
+				8C5CE84F148F469600B71B27 /* main.m */,
+				8C5CE850148F469600B71B27 /* SCGifExample-Info.plist */,
+				8C5CE851148F469600B71B27 /* SCGifExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C5CE820148F3E4900B71B27 /* SCGifExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C5CE842148F3E4900B71B27 /* Build configuration list for PBXNativeTarget "SCGifExample" */;
+			buildPhases = (
+				8C5CE81D148F3E4900B71B27 /* Sources */,
+				8C5CE81E148F3E4900B71B27 /* Frameworks */,
+				8C5CE81F148F3E4900B71B27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCGifExample;
+			productName = SCGifExample;
+			productReference = 8C5CE821148F3E4900B71B27 /* SCGifExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C5CE818148F3E4900B71B27 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8C5CE81B148F3E4900B71B27 /* Build configuration list for PBXProject "SCGifExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C5CE816148F3E4900B71B27;
+			productRefGroup = 8C5CE822148F3E4900B71B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C5CE820148F3E4900B71B27 /* SCGifExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C5CE81F148F3E4900B71B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5CE85B148F469600B71B27 /* 1.gif in Resources */,
+				8C5CE85D148F469600B71B27 /* SCGifExample-Info.plist in Resources */,
+				8C5CE868148F470F00B71B27 /* InfoPlist.strings in Resources */,
+				8C5CE86E148F471500B71B27 /* MainWindow.xib in Resources */,
+				8C5CE86F148F471500B71B27 /* SCGifExampleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C5CE81D148F3E4900B71B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5CE85C148F469600B71B27 /* main.m in Sources */,
+				8C5CE85E148F469600B71B27 /* SCGifExampleAppDelegate.m in Sources */,
+				8C5CE85F148F469600B71B27 /* SCGifExampleViewController.m in Sources */,
+				8C5CE860148F469600B71B27 /* SCGIFImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C5CE866148F470F00B71B27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C5CE867148F470F00B71B27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8C5CE86A148F471500B71B27 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C5CE86B148F471500B71B27 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		8C5CE86C148F471500B71B27 /* SCGifExampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C5CE86D148F471500B71B27 /* en */,
+			);
+			name = SCGifExampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C5CE840148F3E4900B71B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C5CE841148F3E4900B71B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C5CE843148F3E4900B71B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCGifExample-Prefix.pch";
+				INFOPLIST_FILE = "SCGifExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8C5CE844148F3E4900B71B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCGifExample-Prefix.pch";
+				INFOPLIST_FILE = "SCGifExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C5CE81B148F3E4900B71B27 /* Build configuration list for PBXProject "SCGifExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C5CE840148F3E4900B71B27 /* Debug */,
+				8C5CE841148F3E4900B71B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C5CE842148F3E4900B71B27 /* Build configuration list for PBXNativeTarget "SCGifExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C5CE843148F3E4900B71B27 /* Debug */,
+				8C5CE844148F3E4900B71B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C5CE818148F3E4900B71B27 /* Project object */;
+}
