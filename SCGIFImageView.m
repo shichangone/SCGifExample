@@ -124,6 +124,14 @@
 		// Disposal Method (Operations before draw frame)
 		switch (frame.disposalMethod)
 		{
+            case 0: {
+                if (!CGRectEqualToRect(rect, frame.area)) {
+                    clipRect = CGRectMake(frame.area.origin.x, size.height - frame.area.size.height - frame.area.origin.y, frame.area.size.width, frame.area.size.height);
+                    // Clip Context
+                    CGContextClipToRect(ctx, clipRect);
+                }
+            }
+                break;
 			case 1: // Do not dispose (draw over context)
                     // Create Rect (y inverted) to clipping
 				clipRect = CGRectMake(frame.area.origin.x, size.height - frame.area.size.height - frame.area.origin.y, frame.area.size.width, frame.area.size.height);
