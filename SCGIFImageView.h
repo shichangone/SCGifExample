@@ -8,54 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnimatedGifFrame : NSObject
-{
-	NSData *data;
-	NSData *header;
-	double delay;
-	int disposalMethod;
-	CGRect area;
+@interface SCGIFImageFrame : NSObject {
+    
 }
-
-@property (nonatomic, copy) NSData *header;
-@property (nonatomic, copy) NSData *data;
-@property (nonatomic) double delay;
-@property (nonatomic) int disposalMethod;
-@property (nonatomic) CGRect area;
+@property (nonatomic) double duration;
+@property (nonatomic, retain) UIImage* image;
 
 @end
 
 @interface SCGIFImageView : UIImageView {
-	NSData *GIF_pointer;
-	NSMutableData *GIF_buffer;
-	NSMutableData *GIF_screen;
-	NSMutableData *GIF_global;
-	NSMutableArray *GIF_frames;
-	
-	int GIF_sorted;
-	int GIF_colorS;
-	int GIF_colorC;
-	int GIF_colorF;
-	int animatedGifDelay;
-	
-	int dataPointer;
+    NSInteger _currentImageIndex;
 }
-@property (nonatomic, retain) NSMutableArray *GIF_frames;
+@property (nonatomic, retain) NSArray* imageFrameArray;
+@property (nonatomic, retain) NSTimer* timer;
 
-- (id)initWithGIFFile:(NSString*)gifFilePath;
-- (id)initWithGIFData:(NSData*)gifImageData;
-
-- (void)loadImageData;
-
-+ (NSMutableArray*)getGifFrames:(NSData*)gifImageData;
-+ (BOOL)isGifImage:(NSData*)imageData;
-
-- (void) decodeGIF:(NSData *)GIFData;
-- (void) GIFReadExtensions;
-- (void) GIFReadDescriptor;
-- (bool) GIFGetBytes:(int)length;
-- (bool) GIFSkipBytes: (int) length;
-- (NSData*) getFrameAsDataAtIndex:(int)index;
-- (UIImage*) getFrameAsImageAtIndex:(int)index;
+- (void)setData:(NSData*)imageData;
 
 @end

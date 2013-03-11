@@ -25,9 +25,11 @@
     [super viewDidLoad];
     
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"1.gif" ofType:nil];
-    SCGIFImageView* gifImageView = [[[SCGIFImageView alloc] initWithGIFFile:filePath] autorelease];
-    gifImageView.frame = CGRectMake(0, 0, gifImageView.image.size.width, gifImageView.image.size.height);
-    gifImageView.center = self.view.center;
+    NSData* imageData = [NSData dataWithContentsOfFile:filePath];
+    
+    SCGIFImageView* gifImageView = [[[SCGIFImageView alloc] initWithFrame:self.view.bounds] autorelease];
+    [gifImageView setData:imageData];
+    
     [self.view addSubview:gifImageView];
 }
 

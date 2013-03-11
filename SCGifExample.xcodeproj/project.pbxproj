@@ -12,13 +12,14 @@
 		8C5CE82A148F3E4900B71B27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5CE829148F3E4900B71B27 /* CoreGraphics.framework */; };
 		8C5CE85B148F469600B71B27 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE84E148F469600B71B27 /* 1.gif */; };
 		8C5CE85C148F469600B71B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE84F148F469600B71B27 /* main.m */; };
-		8C5CE85D148F469600B71B27 /* SCGifExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE850148F469600B71B27 /* SCGifExample-Info.plist */; };
 		8C5CE85E148F469600B71B27 /* SCGifExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE856148F469600B71B27 /* SCGifExampleAppDelegate.m */; };
 		8C5CE85F148F469600B71B27 /* SCGifExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE858148F469600B71B27 /* SCGifExampleViewController.m */; };
 		8C5CE860148F469600B71B27 /* SCGIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE85A148F469600B71B27 /* SCGIFImageView.m */; };
 		8C5CE868148F470F00B71B27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE866148F470F00B71B27 /* InfoPlist.strings */; };
 		8C5CE86E148F471500B71B27 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE86A148F471500B71B27 /* MainWindow.xib */; };
 		8C5CE86F148F471500B71B27 /* SCGifExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5CE86C148F471500B71B27 /* SCGifExampleViewController.xib */; };
+		8CC6DEB316ED884300B7D51D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC6DEB216ED884300B7D51D /* ImageIO.framework */; };
+		8CC6DEB516ED896800B7D51D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC6DEB416ED896800B7D51D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		8C5CE867148F470F00B71B27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		8C5CE86B148F471500B71B27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = SOURCE_ROOT; };
 		8C5CE86D148F471500B71B27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCGifExampleViewController.xib; sourceTree = SOURCE_ROOT; };
+		8CC6DEB216ED884300B7D51D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		8CC6DEB416ED896800B7D51D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC6DEB316ED884300B7D51D /* ImageIO.framework in Frameworks */,
 				8C5CE826148F3E4900B71B27 /* UIKit.framework in Frameworks */,
 				8C5CE828148F3E4900B71B27 /* Foundation.framework in Frameworks */,
 				8C5CE82A148F3E4900B71B27 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +79,7 @@
 		8C5CE824148F3E4900B71B27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CC6DEB216ED884300B7D51D /* ImageIO.framework */,
 				8C5CE825148F3E4900B71B27 /* UIKit.framework */,
 				8C5CE827148F3E4900B71B27 /* Foundation.framework */,
 				8C5CE829148F3E4900B71B27 /* CoreGraphics.framework */,
@@ -102,6 +107,7 @@
 		8C5CE82C148F3E4900B71B27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CC6DEB416ED896800B7D51D /* Default-568h@2x.png */,
 				8C5CE866148F470F00B71B27 /* InfoPlist.strings */,
 				8C5CE84F148F469600B71B27 /* main.m */,
 				8C5CE850148F469600B71B27 /* SCGifExample-Info.plist */,
@@ -158,10 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5CE85B148F469600B71B27 /* 1.gif in Resources */,
-				8C5CE85D148F469600B71B27 /* SCGifExample-Info.plist in Resources */,
 				8C5CE868148F470F00B71B27 /* InfoPlist.strings in Resources */,
 				8C5CE86E148F471500B71B27 /* MainWindow.xib in Resources */,
 				8C5CE86F148F471500B71B27 /* SCGifExampleViewController.xib in Resources */,
+				8CC6DEB516ED896800B7D51D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +264,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCGifExample-Prefix.pch";
 				INFOPLIST_FILE = "SCGifExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCGifExample-Prefix.pch";
 				INFOPLIST_FILE = "SCGifExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
