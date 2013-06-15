@@ -7,7 +7,7 @@
 //
 
 #import "SCGifExampleViewController.h"
-#import "SCGIFImageView.h"
+
 
 @implementation SCGifExampleViewController
 
@@ -27,10 +27,10 @@
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"1.gif" ofType:nil];
     NSData* imageData = [NSData dataWithContentsOfFile:filePath];
     
-    SCGIFImageView* gifImageView = [[[SCGIFImageView alloc] initWithFrame:self.view.bounds] autorelease];
-    [gifImageView setData:imageData];
-    
-    [self.view addSubview:gifImageView];
+    _gifImageView = [[[SCGIFImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)] autorelease];
+    [_gifImageView setData:imageData];
+
+    [self.view addSubview:_gifImageView];
 }
 
 
@@ -45,6 +45,16 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)actionAnimate:(id)sender {
+    _gifImageView.animating = !_gifImageView.animating;
+    
+    if (_gifImageView.animating) {
+        [_button setTitle:@"Pause" forState:UIControlStateNormal];
+    } else {
+        [_button setTitle:@"Continue" forState:UIControlStateNormal];
+    }
 }
 
 @end

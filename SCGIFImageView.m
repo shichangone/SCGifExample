@@ -32,6 +32,7 @@
 @implementation SCGIFImageView
 @synthesize imageFrameArray = _imageFrameArray;
 @synthesize timer = _timer;
+@synthesize animating = _animating;
 
 - (void)dealloc
 {
@@ -80,6 +81,7 @@
     if (tmpArray.count > 1) {
         self.imageFrameArray = tmpArray;
         _currentImageIndex = -1;
+        _animating = YES;
         [self showNextImage];
     } else {
         self.image = [UIImage imageWithData:imageData];
@@ -90,13 +92,40 @@
     [super setImage:image];
     [self resetTimer];
     self.imageFrameArray = nil;
+    _animating = NO;
 }
 
 - (void)showNextImage {
+    if (!_animating) {
+        return;
+    }
+    
     _currentImageIndex = (++_currentImageIndex) % _imageFrameArray.count;
     SCGIFImageFrame* gifImage = [_imageFrameArray objectAtIndex:_currentImageIndex];
     [super setImage:[gifImage image]];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:gifImage.duration target:self selector:@selector(showNextImage) userInfo:nil repeats:NO];
+}
+
+- (void)setAnimating:(BOOL)animating {
+    if (_imageFrameArray.count < 2) {
+        _animating = animating;
+        return;
+    }
+    
+    if (!_animating && animating) {
+        //continue
+        _animating = animating;
+        if (!_timer) {
+            [self showNextImage];
+        }
+    } else if (_animating && !animating) {
+        //stop
+        _animating = animating;
+        if (_timer) {
+            [_timer invalidate];
+            self.timer = nil;
+        }
+    }
 }
 
 @end

@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.viewController = [[[SCGifExampleViewController alloc] initWithNibName:@"SCGifExampleViewController" bundle:nil] autorelease];
      
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

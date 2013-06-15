@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCGIFImageView.h"
 
-@interface SCGifExampleViewController : UIViewController
+@interface SCGifExampleViewController : UIViewController {
+    IBOutlet SCGIFImageView* _gifImageView;
+    IBOutlet UIButton* _button;
+}
+
+- (IBAction)actionAnimate:(id)sender;
 
 @end
