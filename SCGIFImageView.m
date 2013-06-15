@@ -121,10 +121,7 @@
     } else if (_animating && !animating) {
         //stop
         _animating = animating;
-        if (_timer) {
-            [_timer invalidate];
-            self.timer = nil;
-        }
+        [self resetTimer];
     }
 }
 
